@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products - EZ Studio</title>
+    <!--Bootstraps CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css"
+      integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Font Awsome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Bitcount+Prop+Double+Ink:wght@100..900&family=Roboto:wght@700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/products.css"/>
+    <link rel="icon" href="../assets/imgs/dbaf5f58968aab486be5a90f6f87e4c0.ico">
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="../assets/imgs/logo.webp"
+            alt="Logo"
+            width="50"
+            height="50"
+          />EZ Studio
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html#"> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/products"
+                ><i class="fa-solid fa-box-open"></i> Products</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/services"
+                ><i class="fa-solid fa-wrench"></i> Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#about"
+                ><i class="fa-solid fa-info-circle"></i> About EZ Studio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#contact"
+                ><i class="fa-solid fa-phone"></i> Contact</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#partner-ls"
+                ><i class="fa-solid fa-users"></i>Partner</a
+              >
+            </li>
+          </ul>
+
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../register.html">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Models Products -->
+    <section class="products-section py-5" id="products">
+      <div class="container">
+        <h2 class="text-center mb-4">Products list</h2>
+        <div class="row">
+          <h4>Models: <a href="/products/index.html" class="products-btn">All Products</a></h4>
+    
+          <div class="col-md-4 mb-4 products-card">
+            <div class="card h-100 w-100 products">
+              <img src="../assets/imgs/1Banner_sapphire.png" class="card-img-top" alt="Product 1" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Sapphire Knight Set</h5>
+                <p class="card-text">
+                  Stunning armor set of Sapphire Knight ready to suit you
+                </p>
+                <a href="./models/sapphire-knight-set.html" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>300.000đ</del>
+                  <span class="text-danger fw-bold ms-2">199.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100 products">
+              <img src="../assets/imgs/voidtech-models/01JTWVAVQMWNB58C168CPJ03F1.jpg" class="card-img-top"
+                alt="Product 2" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Voidtech Pack [64x]</h5>
+                <p class="card-text">Voidtech Pack Weapons Tools & Cosmetic</p>
+                <a href="../products/models/Voidtech-Pack.html" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>500.000đ</del>
+                  <span class="text-danger fw-bold ms-2">99.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Reddragon Animated Weapon" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Reddragon Animated Weapon</h5>
+                <p class="card-text">Description for this model.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>150.000đ</del>
+                  <span class="text-danger fw-bold ms-2">99.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Steamsparks Animated Weapon" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Steamsparks Animated Weapon</h5>
+                <p class="card-text">Description for this model.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>150.000đ</del>
+                  <span class="text-danger fw-bold ms-2">99.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Archangel Weapon Assortment" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Archangel Weapon Assortment</h5>
+                <p class="card-text">Description for this model.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>150.000đ</del>
+                  <span class="text-danger fw-bold ms-2">99.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Dragonstone Guardians Pack 32x" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Dragonstone Guardians Pack 32x</h5>
+                <p class="card-text">Description for this model.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>150.000đ</del>
+                  <span class="text-danger fw-bold ms-2">99.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Terra Animated Weapon Set" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Terra Animated Weapon Set</h5>
+                <p class="card-text">Description for this model.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>150.000đ</del>
+                  <span class="text-danger fw-bold ms-2">99.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Sorcery Animated Weapons" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Sorcery Animated Weapons</h5>
+                <p class="card-text">Description for this model.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>150.000đ</del>
+                  <span class="text-danger fw-bold ms-2">99.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Discord Nitro Animated" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Discord Nitro Animated</h5>
+                <p class="card-text">Description for this model.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>150.000đ</del>
+                  <span class="text-danger fw-bold ms-2">99.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Fallen Angel Animated Weapon" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Fallen Angel Animated Weapon</h5>
+                <p class="card-text">Description for this model.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>150.000đ</del>
+                  <span class="text-danger fw-bold ms-2">99.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Camilla Weapons Tools Cosmetic" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Camilla Weapons Tools Cosmetic</h5>
+                <p class="card-text">Description for this model.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>150.000đ</del>
+                  <span class="text-danger fw-bold ms-2">99.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Necros Animated Weapons Tool" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Necros Animated Weapons Tool</h5>
+                <p class="card-text">Description for this model.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>150.000đ</del>
+                  <span class="text-danger fw-bold ms-2">99.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Bahamut Animated Weapon Set" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Bahamut Animated Weapon Set</h5>
+                <p class="card-text">Description for this model.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>150.000đ</del>
+                  <span class="text-danger fw-bold ms-2">99.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Little Teddy Bear Weapons Tool" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Little Teddy Bear Weapons Tool</h5>
+                <p class="card-text">Description for this model.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>150.000đ</del>
+                  <span class="text-danger fw-bold ms-2">99.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Lightning Power Animated Wea" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Lightning Power Animated Wea</h5>
+                <p class="card-text">Description for this model.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>150.000đ</del>
+                  <span class="text-danger fw-bold ms-2">99.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Golden Christmas Animated Set" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Golden Christmas Animated Set</h5>
+                <p class="card-text">Description for this model.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>150.000đ</del>
+                  <span class="text-danger fw-bold ms-2">99.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Little Shark Animated Weapons" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Little Shark Animated Weapons</h5>
+                <p class="card-text">Description for this model.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>150.000đ</del>
+                  <span class="text-danger fw-bold ms-2">99.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Evergreen Animated Weapons T" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Evergreen Animated Weapons T</h5>
+                <p class="card-text">Description for this model.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>150.000đ</del>
+                  <span class="text-danger fw-bold ms-2">99.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Cherry Blossom Set Tool" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Cherry Blossom Set Tool</h5>
+                <p class="card-text">Description for this model.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>150.000đ</del>
+                  <span class="text-danger fw-bold ms-2">99.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Stone Graveyer Weapons Set" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Stone Graveyer Weapons Set</h5>
+                <p class="card-text">Description for this model.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>150.000đ</del>
+                  <span class="text-danger fw-bold ms-2">99.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+    
+    <!-- Maps Products -->
+    
+    <section class="products-section py-5" id="maps">
+      <div class="container">
+        <div class="row">
+          <h4>Maps:</h4>
+    
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Orcs Prisonmines" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Orcs Prisonmines</h5>
+                <p class="card-text">Description for this map.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>250.000đ</del>
+                  <span class="text-danger fw-bold ms-2">149.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Bricktown Server Hub" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Bricktown Server Hub</h5>
+                <p class="card-text">Description for this map.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>250.000đ</del>
+                  <span class="text-danger fw-bold ms-2">149.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Houses Server Lobby" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Houses Server Lobby</h5>
+                <p class="card-text">Description for this map.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>250.000đ</del>
+                  <span class="text-danger fw-bold ms-2">149.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Lost Island Game Lobby" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Lost Island Game Lobby</h5>
+                <p class="card-text">Description for this map.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>250.000đ</del>
+                  <span class="text-danger fw-bold ms-2">149.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Classic Server Hub" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Classic Server Hub</h5>
+                <p class="card-text">Description for this map.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>250.000đ</del>
+                  <span class="text-danger fw-bold ms-2">149.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Neren Faction Spawn" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Neren Faction Spawn</h5>
+                <p class="card-text">Description for this map.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>250.000đ</del>
+                  <span class="text-danger fw-bold ms-2">149.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Army Prisonmines" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Army Prisonmines</h5>
+                <p class="card-text">Description for this map.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>250.000đ</del>
+                  <span class="text-danger fw-bold ms-2">149.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Arena Miniature Stone" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Arena Miniature Stone</h5>
+                <p class="card-text">Description for this map.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>250.000đ</del>
+                  <span class="text-danger fw-bold ms-2">149.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Forest PVP" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Forest PVP</h5>
+                <p class="card-text">Description for this map.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>250.000đ</del>
+                  <span class="text-danger fw-bold ms-2">149.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Lobby Lillkyrka Updated" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Lobby Lillkyrka Updated</h5>
+                <p class="card-text">Description for this map.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>250.000đ</del>
+                  <span class="text-danger fw-bold ms-2">149.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Mushroom Warzone 650x650" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Mushroom Warzone 650x650</h5>
+                <p class="card-text">Description for this map.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>250.000đ</del>
+                  <span class="text-danger fw-bold ms-2">149.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Survival Games Map" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Survival Games Map</h5>
+                <p class="card-text">Description for this map.</a /p>
+                  <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>250.000đ</del>
+                  <span class="text-danger fw-bold ms-2">149.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Tau Ceti E 24 Player" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Tau Ceti E 24 Player</h5>
+                <p class="card-text">Description for this map.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>250.000đ</del>
+                  <span class="text-danger fw-bold ms-2">149.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Faction Spawn Medieval Hub" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Faction Spawn Medieval Hub</h5>
+                <p class="card-text">Description for this map.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>250.000đ</del>
+                  <span class="text-danger fw-bold ms-2">149.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Skywars Fantasy Bundle" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Skywars Fantasy Bundle</h5>
+                <p class="card-text">Description for this map.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>250.000đ</del>
+                  <span class="text-danger fw-bold ms-2">149.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Lobby Huge Modern City 450x4" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Lobby Huge Modern City 450x4</h5>
+                <p class="card-text">Description for this map.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>250.000đ</del>
+                  <span class="text-danger fw-bold ms-2">149.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Sky Town Skyblock Spawn" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Sky Town Skyblock Spawn</h5>
+                <p class="card-text">Description for this map.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>250.000đ</del>
+                  <span class="text-danger fw-bold ms-2">149.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+    
+    <!-- File Setup -->
+    <section class="products-section py-5" id="file-setups">
+      <div class="container">
+        <h2 class="text-center mb-4">File Setups list</h2>
+        <div class="row">
+          <h4>File Setups: <a href="/products/index.html" class="products-btn">All Products</a></h4>
+    
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Blossom Mega Earth" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Blossom Mega Earth</h5>
+                <p class="card-text">Description for this setup.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>350.000đ</del>
+                  <span class="text-danger fw-bold ms-2">249.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Mythic Survival Setup" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Mythic Survival Setup</h5>
+                <p class="card-text">Description for this setup.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>350.000đ</del>
+                  <span class="text-danger fw-bold ms-2">249.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Better Survival" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Better Survival</h5>
+                <p class="card-text">Description for this setup.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>350.000đ</del>
+                  <span class="text-danger fw-bold ms-2">249.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Survival Multiplayer Donutsmp" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Survival Multiplayer Donutsmp</h5>
+                <p class="card-text">Description for this setup.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>350.000đ</del>
+                  <span class="text-danger fw-bold ms-2">249.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Survival Games Premium Setup" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Survival Games Premium Setup</h5>
+                <p class="card-text">Description for this setup.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>350.000đ</del>
+                  <span class="text-danger fw-bold ms-2">249.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Gucci SMP Survival Premium" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Gucci SMP Survival Premium</h5>
+                <p class="card-text">Description for this setup.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>350.000đ</del>
+                  <span class="text-danger fw-bold ms-2">249.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Epic Skyblock Setup" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Epic Skyblock Setup</h5>
+                <p class="card-text">Description for this setup.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>350.000đ</del>
+                  <span class="text-danger fw-bold ms-2">249.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Lifesteal Setup" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Lifesteal Setup</h5>
+                <p class="card-text">Description for this setup.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>350.000đ</del>
+                  <span class="text-danger fw-bold ms-2">249.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Lifesteal High Quality" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Lifesteal High Quality</h5>
+                <p class="card-text">Description for this setup.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>350.000đ</del>
+                  <span class="text-danger fw-bold ms-2">249.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Dead By Daylight Premium Setup" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Dead By Daylight Premium Setup</h5>
+                <p class="card-text">Description for this setup.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>350.000đ</del>
+                  <span class="text-danger fw-bold ms-2">249.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Parkour Setup" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Parkour Setup</h5>
+                <p class="card-text">Description for this setup.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>350.000đ</del>
+                  <span class="text-danger fw-bold ms-2">249.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Summer Boxpvp Premium Setup" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Summer Boxpvp Premium Setup</h5>
+                <p class="card-text">Description for this setup.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>350.000đ</del>
+                  <span class="text-danger fw-bold ms-2">249.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Enes Best Boxpvp Setup" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Enes Best Boxpvp Setup</h5>
+                <p class="card-text">Description for this setup.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>350.000đ</del>
+                  <span class="text-danger fw-bold ms-2">249.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Bungeecord Fakelobby Server" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Bungeecord Fakelobby Server</h5>
+                <p class="card-text">Description for this setup.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>350.000đ</del>
+                  <span class="text-danger fw-bold ms-2">249.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Bedwars Server Setup" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Bedwars Server Setup</h5>
+                <p class="card-text">Description for this setup.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>350.000đ</del>
+                  <span class="text-danger fw-bold ms-2">249.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Towny Slimefun Premium Setup" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Towny Slimefun Premium Setup</h5>
+                <p class="card-text">Description for this setup.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>350.000đ</del>
+                  <span class="text-danger fw-bold ms-2">249.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 w-100">
+              <img src="../assets/imgs/placeholder.png" class="card-img-top" alt="Minecity Roleplay GTA" />
+              <div class="card-body justify-content-center text-center">
+                <h5 class="card-title">Minecity Roleplay GTA</h5>
+                <p class="card-text">Description for this setup.</p>
+                <a href="#" class="btn btn-primary">Xem ngay!</a>
+                <p>
+                  <del>350.000đ</del>
+                  <span class="text-danger fw-bold ms-2">249.000 VND</span>
+                </p>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+    
+    <!--Footer-->
+    <footer class="footer">
+      <div class="container text-center">
+      <p>&copy; 2025 EZ Studio. All rights reserved.</p>
+      <div class="row justify-content-center">
+        <div class="col-md-3">
+          <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="/products/index.html">Products</a></li>
+            <li><a href="services/index.html">Services</a></li>
+            <li><a href="#about">About EZ Studio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#partner-ls">Partner</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <ul class="list-unstyled">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Help Center</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <ul class="list-unstyled">
+            <li>
+              <a href="fb.com/fin12n" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <!--Bootstraps JS-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"
+      integrity="sha512-HvOjJrdwNpDbkGJIG2ZNqDlVqMo77qbs4Me4cah0HoDrfhrbA+8SBlZn1KrvAQw7cILLPFJvdwIgphzQmMm+Pw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+.banners {
+  background-image: url(../imgs/banner1.webp);
+  background-size: cover;
+  background-position: center; /* Optional: centers the image */
+  background-repeat: no-repeat; /* Optional: prevents repeating */
+  width: 100%;
+  height: 435px;
+  border-radius: 10px;
+}
+
+.banners .btn-back {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: var(--ez-yellow);
+  color: var(--ez-dark-bg);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.login-section .card {
+  background-color: var(--ez-card-bg);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-section .card-body {
+  padding: 20px;
+}
+
+.login-section .form-control {
+  background-color: var(--ez-dark-bg);
+  border: 1px solid var(--ez-border);
+  color: var(--ez-text-light);
+}   
+.login-section .form-control:focus {
+  background-color: var(--ez-dark-bg);
+  border-color: var(--ez-blue);
+  box-shadow: none;
+  color: var(--ez-text-light);
+}
+.login-section .btn-primary {
+  background-color: var(--ez-blue);
+  border: none;
+}
+.login-section .btn-primary:hover {
+  background-color: #0056b3;
+}
+.login-section .btn-primary:focus,
+.login-section .btn-primary:active {
+  background-color: #004085;
+  border-color: #004085;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+.login-section .form-check-label {
+  color: var(--ez-text-light);
+}
+.login-section .forgot-password {
+  color: var(--ez-yellow);
+  text-decoration: none;
+}
+.login-section .forgot-password:hover {
+  text-decoration: underline;
+}
+.login-section .register-link {
+  color: var(--ez-yellow);
+  text-decoration: none;
+}
+.login-section .register-link:hover {
+  text-decoration: underline;
+}
+.login-section .card-title {
+  color: var(--ez-text-light);
+}
+.login-section .text-bold {
+  font-weight: bold;
+}
+.login-section p {
+  color: rgba(255, 255, 255, 0.8);
+}
+.login-section a {
+  color: var(--ez-yellow);
+}
+.login-section a:hover {
+  text-decoration: underline;
+}
+.login-section .text-center {
+  text-align: center;
+}
+.login-section .mb-4 {
+  margin-bottom: 1.5rem;
+}
+.login-section .py-5 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.login-section .justify-content-center {
+  justify-content: center;
+}
+.login-section .d-flex {
+  display: flex;
+}
+.login-section .align-items-center {
+  align-items: center;
+}
+.login-section .gap-3 {
+  gap: 1rem;
+}
+.login-section .col-4 {
+  flex: 0 0 auto;
+  width: 33.333333%;
+}
+.login-section  .mb-4 {
+  margin-bottom: 1.5rem;
+}
+.login-section .text-white {
+  color: #ffffff;
+}
+.login-section .card-body.text-center {
+  text-align: center;
+}
+.login-section .card-title.mb-4 {
+  margin-bottom: 1.5rem;
+}
+.login-section .card.text-white {
+  color: #ffffff;
+}
+.login-form {
+  height: 435px;
+}
+.btn-back:hover {
+  text-decoration: none;
+}
