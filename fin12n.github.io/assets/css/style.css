@@ -1,0 +1,286 @@
+/* Biến màu (Variables) lấy từ logo EZ Studio */
+:root {
+  --ez-dark-bg: #2b3d4f; /* Màu nền trời/biển sâu trong logo */
+  --ez-card-bg: #34495e; /* Màu tối hơn một chút cho card */
+  --ez-stone-grey: #4e6a85; /* Màu viền xám đá */
+  --ez-yellow: #ffc900; /* Màu vàng của chữ "Z" */
+  --ez-blue: #33cbff; /* Màu xanh của chữ "E" */
+  --ez-green: #76c83f; /* Màu xanh lá của chữ "STUDIO" */
+  --ez-text-light: #f8f9fa; /* Màu chữ sáng (Bootstrap default) */
+  --ez-text-dark: #212529; /* Màu chữ tối (Bootstrap default) */
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: var(--ez-dark-bg); /* Nền tối */
+  color: var(--ez-text-light); /* Chữ sáng */
+  margin-top: 70px; /* Bù cho navbar fixed-top */
+}
+
+/* Sử dụng font pixel cho tiêu đề để hợp với logo */
+h1,
+h2,
+h3,
+h4,
+h5,
+.navbar-brand,
+.card-title {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+}
+
+/* --- Navbar --- */
+.navbar {
+  background-color: #2b4c53; /* Màu tối bạn chọn ban đầu, rất hợp! */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: whitesmoke;
+  /* Các thuộc tính top, left, right, z-index của bạn đã OK */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.navbar-brand img {
+  margin-right: 10px;
+  vertical-align: middle;
+  border-radius: 3px;
+}
+
+.nav-link {
+  margin-right: 15px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Tùy chỉnh link trên navbar (khi dùng navbar-dark) */
+.navbar-dark .navbar-nav .nav-link {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: var(--ez-blue); /* Hover màu Xanh "E" */
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+  color: var(--ez-yellow); /* Active màu Vàng "Z" */
+  font-weight: bold;
+}
+
+/* --- Home Section --- */
+.home-section {
+  /* Căn giữa và chiếm toàn bộ chiều cao màn hình (trừ navbar) */
+  min-height: calc(100vh - 70px);
+  background-color: var(--ez-dark-bg);
+  color: var(--ez-text-light);
+  /* d-flex, align-items, justify-content đã có trong HTML (tốt!) */
+}
+
+.home-section h1 {
+  color: var(--ez-yellow); /* Tiêu đề chính màu Vàng "Z" */
+  font-size: 4rem; /* To hơn cho ấn tượng */
+}
+
+/* --- Products Section --- */
+.products-section {
+  background-color: var(--ez-card-bg); /* Nền khác một chút để phân biệt */
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.products-section h2 {
+  color: var(--ez-text-light);
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+/* --- Card (Sản phẩm) --- */
+.card {
+  background-color: var(--ez-dark-bg); /* Nền card tối */
+  border: 1px solid var(--ez-stone-grey); /* Viền màu đá */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  color: var(--ez-text-light); /* Chữ trong card màu sáng */
+  margin-bottom: 20px;
+  transition: transform 0.2s ease-in-out;
+  font-size: 20px;
+}
+
+.card-title {
+  height: 60px;
+  font-size: 1.2rem;
+}
+
+.card-text {
+  height: 50px;
+}
+
+.price {
+  height: 40px;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Hiệu ứng hover nhẹ */
+}
+
+.card-title {
+  color: var(--ez-blue); /* Tiêu đề card màu Xanh "E" */
+  font-size: 1.5rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* --- Nút bấm (Button) --- */
+.btn-primary {
+  background-color: var(--ez-green); /* Màu Xanh lá "STUDIO" */
+  border-color: var(--ez-green);
+  color: var(--ez-text-dark); /* Chữ tối trên nền xanh lá */
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif; /* Nút bấm dùng font Ubuntu cho dễ đọc */
+}
+
+.btn-primary:hover {
+  background-color: #8ade53; /* Màu xanh lá nhạt hơn khi hover */
+  border-color: #8ade53;
+  color: var(--ez-text-dark);
+}
+
+/* Loại bỏ các style cũ của .btn-primary */
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #69b334;
+  border-color: #69b334;
+  color: var(--ez-text-dark);
+  box-shadow: 0 0 0 0.2rem rgba(118, 200, 63, 0.5); /* Shadow màu xanh lá */
+}
+/* --- Services --- */
+.services-section {
+  background-color: var(--ez-dark-bg);
+  padding: 4rem 0;
+}
+.services-section h2 {
+  color: var(--ez-text-light);
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+.services-section .service-item {
+  text-align: center;
+  padding: 1rem;
+}
+.services-section .service-item h5 {
+  color: var(--ez-yellow);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.services-section .service-item p {
+  color: rgba(255, 255, 255, 0.8);
+}
+.services-section .service-item i {
+  font-size: 3rem;
+  color: var(--ez-blue);
+  margin-bottom: 1rem;
+}
+.about-section {
+  background-color: var(--ez-card-bg);
+  padding: 4rem 0;
+}
+.about-section h2 {
+  color: var(--ez-text-light);
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+.about-section p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.about-section a {
+  color: var(--ez-yellow);
+  font-weight: bold;
+}
+
+.contact-section {
+  background-color: var(--ez-dark-bg);
+  padding: 4rem 0;
+}
+.contact-section h2 {
+  color: var(--ez-text-light);
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+.contact-section p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.contact-section a {
+  color: var(--ez-yellow);
+  font-weight: bold;
+}
+.contact-section form {
+  margin-top: 2rem;
+}
+/* --- Footer --- */
+.footer {
+  background-color: #2b4c53; /* Giống màu của navbar */
+  color: rgba(255, 255, 255, 0.7); /* Màu chữ xám nhạt */
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  margin-top: 2rem; /* Tạo khoảng cách với phần 'Partner' bên trên */
+}
+
+.footer .list-unstyled li {
+  margin-bottom: 0.5rem; /* Thêm khoảng cách giữa các link */
+}
+
+.footer a {
+  color: rgba(255, 255, 255, 0.9); /* Link màu trắng */
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer a:hover {
+  color: var(--ez-yellow); /* Đổi màu vàng (từ logo) khi hover */
+  text-decoration: underline;
+}
+
+.services-btn {
+  background-color: var(--ez-blue);
+  color: var(--ez-text-dark);
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.services-btn:hover {
+  background-color: #66e0ff;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-section h1 {
+    font-size: 2.5rem; /* Giảm kích thước tiêu đề trên di động */
+  }
+  .products-section h2,
+  .services-section h2,
+  .about-section h2,
+  .contact-section h2 {
+    font-size: 2rem; /* Giảm kích thước tiêu đề trên di động */
+  }
+  .card-title {
+    font-size: 1.2rem; /* Giảm kích thước tiêu đề card trên di động */
+  }
+  .btn-primary {
+    font-size: 0.9rem; /* Giảm kích thước nút bấm trên di động */
+  }
+}
+
