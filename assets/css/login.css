@@ -1,0 +1,134 @@
+/* Background Image for Login Page */
+
+body {
+    position: relative;
+    z-index: 0; 
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* đảm bảo body ôm toàn bộ web */
+    display: flex;
+    flex-direction: column;
+}
+
+body::before {
+    content: "";
+    position: fixed; /* để background giống normal */
+    inset: 0;
+    background-image: url("../imgs/banner1.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.35;
+    z-index: -1; /* đặt sau nội dung */
+}
+
+/* CSS for Back to Home Page Button */
+
+.btn-homeback {
+    margin: 20px 0 0 20px;
+    align-self: flex-start;
+}
+
+/* Login Container */
+
+.login-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Login form */
+
+.login-form {
+    background-color: rgba(255, 255, 255, 0.95); /* Màu nền trắng với độ mờ */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.title-login {
+    color: var(--ez-text-dark);
+    font-size: 1.75rem;
+}
+
+.form-label {
+    font-weight: bold;
+    color: var(--ez-text-dark);
+}
+
+.forgot-password {
+    color: var(--ez-text-dark);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.required-note {
+    color: black;
+    margin-top: 15px;
+    padding: 0 15px;
+}
+
+/* Responsive Design */
+
+/* Mobile phones (up to 576px) */
+@media (max-width: 576px) {
+    .btn-homeback {
+        margin: 10px;
+        font-size: 0.85rem;
+        padding: 8px 16px;
+    }
+    
+    .login-form {
+        padding: 20px;
+    }
+    
+    .title-login {
+        font-size: 1.5rem;
+    }
+    
+    .form-control {
+        font-size: 0.9rem;
+    }
+    
+    .form-label {
+        font-size: 0.9rem;
+    }
+}
+
+/* Tablets (577px to 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+    .btn-homeback {
+        margin: 15px;
+    }
+    
+    .login-form {
+        padding: 25px;
+    }
+    
+    .title-login {
+        font-size: 1.6rem;
+    }
+}
+
+/* Small laptops (769px to 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+    .login-form {
+        padding: 30px;
+    }
+}
+
+/* Large screens (993px and up) */
+@media (min-width: 993px) {
+    .login-container {
+        padding: 40px;
+    }
+}

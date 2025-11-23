@@ -1,0 +1,39 @@
+.carousel-item img {
+  height: 380px;
+  object-fit: cover;
+}
+
+.details-information {
+  padding: 15px 0;
+  margin-top: 2rem;
+  background-color: var(--ez-card-bg);
+}
+
+.details-information p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.a {
+  text-decoration: none;
+}
+
+.products img {
+  max-height: 200px;
+}
+
+.products-btn {
+  text-decoration: none;
+  height: 40px;
+  background-color: var(--ez-green);
+  color: var(--ez-text-dark);
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+  border-radius: 5px;
+}
+
+.products-btn:hover {
+  background-color: #8ade53;
+}

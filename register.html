@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - EZ Studio</title>
+    <!--Bootstraps CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css"
+      integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Font Awsome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH7Zlbv0sL0sn7O/xVqaGhn8Yh6X2nKL6e/3nBVSXh6Yk1Jq8gI2+owz0NfK5p7Y4sQmD8Y+hf8cp3r5F+o+mw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Bitcount+Prop+Double+Ink:wght@100..900&family=Roboto:wght@700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/register.css" />
+    <link rel="logo" href="../assets/imgs/logo.webp" />
+  </head>
+  <body>
+    <!--Register Form-->
+    <a href="./index.html" class="btn btn-homeback" style="background-color: var(--ez-yellow);">Back to Home Page</a>
+    <div class="register-container">
+      <div class="row mx-auto justify-content-center align-items-center">
+        <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 register-form">
+          <form action="#" method="POST" class="p-4 rounded-3">
+            <h2 class="text-center mb-4 title-register" style="font-family: 'Roboto', sans-serif;">Register to EZ Studio</h2>
+            
+            <div class="mb-3">
+              <label for="username" class="form-label">Username: <small style="color: red;">*</small></label>
+              <input
+                type="text"
+                class="form-control"
+                id="username"
+                name="username"
+                placeholder="Enter your username"
+                required
+              />
+            </div>
+            
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address: <small style="color: red;">*</small></label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            
+            <div class="mb-3">
+              <label for="password" class="form-label">Password: <small style="color: red;">*</small></label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                required
+              />
+            </div>
+            
+            <div class="mb-3">
+              <label for="confirmPassword" class="form-label">Confirm Password: <small style="color: red;">*</small></label>
+              <input
+                type="password"
+                class="form-control"
+                id="confirmPassword"
+                name="confirmPassword"
+                placeholder="Confirm your password"
+                required
+              />
+            </div>
+            
+            <div class="mb-3">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="terms"
+                  name="terms"
+                  required
+                />
+                <label class="form-check-label" for="terms">
+                  I agree to the <a href="#" class="terms-link">Terms and Conditions</a>
+                </label>
+              </div>
+            </div>
+            
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary" style="background-color: var(--ez-yellow); border: none;">Register</button>
+            </div>
+            
+            <div class="text-center mt-3">
+              <p class="already-account">Already have an account? <a href="./login.html" class="login-link">Login here</a></p>
+            </div>
+          </form>
+          <div class="required-note">
+            <small style="color: red;">*</small> is Required
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Bootstraps JS-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"
+      integrity="sha512-HvOjJrdwNpDbkGJIG2ZNqDlVqMo77qbs4Me4cah0HoDrfhrbA+8SBlZn1KrvAQw7cILLPFJvdwIgphzQmMm+Pw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
